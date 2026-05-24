@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Browse romance novels at The Novel Library." />
+  <title>The Novel Library — Romance</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="logo">The Novel <span>Library</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="books.html" class="active">Books</a></li>
+    <li><a href="events.html">Events</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="nav-drawer">
+  <a href="index.html">Home</a>
+  <a href="books.html">Books</a>
+  <a href="events.html">Events</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<div class="hero" style="padding:3rem 2rem;">
+  <h1><em>Romance</em></h1>
+  <p>Discover great stories with us</p>
+  <div class="genre-nav">
+    <a href="books.html" class="genre-btn">All</a>
+    <a href="romance.html" class="genre-btn active">Romance</a>
+    <a href="mysteryandthriller.html" class="genre-btn">Mystery &amp; Thriller</a>
+    <a href="actionandadvanture.html" class="genre-btn">Action &amp; Adventure</a>
+  </div>
+</div>
+
+<section>
+  <div class="book-grid">
+
+    <div class="book-card" data-genre="romance">
+      <img src="images/best-laid-plans.jpg" alt="Best Laid Plans" loading="lazy" />
+      <div class="book-info">
+        <p class="book-genre">Romance</p>
+        <p class="book-title">Best Laid Plans</p>
+        <p class="book-author">Robyn Kelly</p>
+        <button><a href="best_laid_plans.html">OPEN</a></button>
+      </div>
+    </div>
+
+    <div class="book-card" data-genre="romance">
+      <img src="images/healing her heart.png" alt="Healing Her Heart" loading="lazy" />
+      <div class="book-info">
+        <p class="book-genre">Romance</p>
+        <p class="book-title">Healing Her Heart</p>
+        <p class="book-author">Laura Scott</p>
+        <button><a href="healing_her_heart.html">OPEN</a></button>
+      </div>
+    </div>
+
+    <div class="book-card" data-genre="romance">
+      <img src="images/sadi's spirit.jpg" alt="Sadie's Spirit" loading="lazy" />
+      <div class="book-info">
+        <p class="book-genre">Romance</p>
+        <p class="book-title">Sadie's Spirit</p>
+        <p class="book-author">CB Samet</p>
+        <button><a href="sadie's_spirit.html">OPEN</a></button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 The Novel Library</p>
+  <p>bida25-287@thuto.bac.ac.bw</p>
+</footer>
+
+<script src="shared.js"></script>
+</body>
+</html>

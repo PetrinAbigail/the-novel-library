@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact The Novel Library — we'd love to hear from you." />
+  <title>The Novel Library — Contact</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="logo">The Novel <span>Library</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="books.html">Books</a></li>
+    <li><a href="events.html">Events</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+  <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="nav-drawer">
+  <a href="index.html">Home</a>
+  <a href="books.html">Books</a>
+  <a href="events.html">Events</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<div class="hero" style="padding:3rem 2rem;">
+  <h1>Get in <em>Touch</em></h1>
+  <p>We'd love to hear from you.</p>
+</div>
+
+<section>
+  <div class="contact-grid">
+
+    <div class="contact-info">
+      <p class="section-label">Contact Us</p>
+      <h2>Let's Talk</h2>
+      <p>Questions, suggestions, or partnership ideas — our inbox is open.</p>
+      <div class="detail">
+        <div class="detail-icon">📧</div>
+        <p>petrinabigail05@gmail.com</p>
+      </div>
+      <div class="detail">
+        <div class="detail-icon">📞</div>
+        <p>+267 78 693 068</p>
+      </div>
+    </div>
+
+    <div class="form-box">
+      <form action="feedback.html" method="get">
+        <div class="form-group">
+          <label for="contact-name">Name</label>
+          <input id="contact-name" type="text" placeholder="Your name" required />
+        </div>
+        <div class="form-group">
+          <label for="contact-email">Email</label>
+          <input id="contact-email" type="email" placeholder="your@email.com" required />
+        </div>
+        <div class="form-group">
+          <label for="contact-subject">Subject</label>
+          <select id="contact-subject">
+            <option>General Question</option>
+            <option>Book Recommendation</option>
+            <option>Author Submission</option>
+            <option>Partnership</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="contact-msg">Message</label>
+          <textarea id="contact-msg" placeholder="Your message…" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 The Novel Library</p>
+  <p>bida25-287@thuto.bac.ac.bw</p>
+</footer>
+
+<script src="shared.js"></script>
+</body>
+</html>

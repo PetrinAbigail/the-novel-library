@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Browse all novels at The Novel Library — romance, mystery, thriller, action and adventure." />
+  <title>The Novel Library — Books</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="logo">The Novel <span>Library</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="books.html" class="active">Books</a></li>
+    <li><a href="events.html">Events</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="nav-drawer">
+  <a href="index.html">Home</a>
+  <a href="books.html">Books</a>
+  <a href="events.html">Events</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<div class="hero" style="padding:3rem 2rem;">
+  <h1>Our <em>Collection</em></h1>
+  <p>Discover great stories with us</p>
+  <div class="genre-nav">
+    <a href="books.html" class="genre-btn active">All</a>
+    <a href="romance.html" class="genre-btn">Romance</a>
+    <a href="mysteryandthriller.html" class="genre-btn">Mystery &amp; Thriller</a>
+    <a href="actionandadvanture.html" class="genre-btn">Action &amp; Adventure</a>
+  </div>
+</div>
+
+<section>
+  <div class="search-bar">
+    <input id="bookSearch" type="text" placeholder="Search title or author…" aria-label="Search books" />
+  </div>
+
+  <div class="book-grid">
+
+    <div class="book-card" data-genre="mysteryandthriller">
+      <img src="images/dark mirror.jpg" alt="Dark Mirror"/>
+      <div class="book-info">
+        <p class="book-genre">Mystery and Thriller</p>
+        <p class="book-title">Dark Mirror</p>
+        <p class="book-author">Louis Joseph Vance</p>
+        <button><a href="dark_mirror.html">OPEN</a></button>
+      </div>
+    </div>
+
+    <div class="book-card" data-genre="mysteryandthriller">
+      <img src="images/let me in.jpg" alt="Let Me In"/>
+      <div class="book-info">
+        <p class="book-genre">Mystery and Thriller</p>
+        <p class="book-title">Let Me In</p>
+        <p class="book-author">James Okafor</p>
+        <button><a href="let_me_in.html">OPEN</a></button>
+      </div>
+    </div>
+
+    <div class="book-card" data-genre="mysteryandthriller">
+      <img src="images/the after house.jpg" alt="The After House"/>
+      <div class="book-info">
+        <p class="book-genre">Mystery and Thriller</p>
+        <p class="book-title">The After House</p>
+        <p class="book-author">Mary Roberts Rinehart</p>
+        <button><a href="the_after_house.html">OPEN</a></button>
+      </div>
+    </div>
+
+    <div class="book-card" data-genre="romance">
+      <img src="images/best-laid-plans.jpg" alt="Best Laid Plans"/>
+      <div class="book-info">
+        <p class="book-genre">Romance</p>
+        <p class="book-title">Best Laid Plans</p>
+        <p class="book-author">Robyn Kelly</p>
+        <button><a href="best_laid_plans.html">OPEN</a></button>
+      </div>
+    </div>
+
+    <div class="book-card" data-genre="romance">
+      <img src="images/healing her heart.png" alt="Healing Her Heart"/>
+      <div class="book-info">
+        <p class="book-genre">Romance</p>
+        <p class="book-title">Healing Her Heart</p>
+        <p class="book-author">Laura Scott</p>
+        <button><a href="healing_her_heart.html">OPEN</a></button>
+      </div>
+    </div>
+
+    <div class="book-card" data-genre="romance">
+      <img src="images/sadi's spirit.jpg" alt="Sadie's Spirit"/>
+      <div class="book-info">
+        <p class="book-genre">Romance</p>
+        <p class="book-title">Sadie's Spirit</p>
+        <p class="book-author">CB Samet</p>
+        <button><a href="sadie's_spirit.html">OPEN</a></button>
+      </div>
+    </div>
+
+    <div class="book-card" data-genre="actionandadvanture">
+      <img src="images/claimed by the outlaw.jpg" alt="Claimed by the Outlaw"/>
+      <div class="book-info">
+        <p class="book-genre">Action and Adventure</p>
+        <p class="book-title">Claimed by the Outlaw</p>
+        <p class="book-author">Rica Lane</p>
+        <button><a href="claimed_by_the_outlaw.html">OPEN</a></button>
+      </div>
+    </div>
+
+    <div class="book-card" data-genre="actionandadvanture">
+      <img src="images/the billionaire secrete heart.jpg" alt="The Billionaire's Secret Heart"/>
+      <div class="book-info">
+        <p class="book-genre">Action and Adventure</p>
+        <p class="book-title">The Billionaire's Secret Heart</p>
+        <p class="book-author">Ivy Layne</p>
+        <button><a href="the_billionaire_secret_heart.html">OPEN</a></button>
+      </div>
+    </div>
+
+    <div class="book-card" data-genre="actionandadvanture">
+      <img src="images/the elephant in the ivy.jpg" alt="The Elephant in the Ivy"/>
+      <div class="book-info">
+        <p class="book-genre">Action and Adventure</p>
+        <p class="book-title">The Elephant in the Ivy</p>
+        <p class="book-author">Alexander Greengaard</p>
+        <button><a href="the_elephant_in_the_ivy.html">OPEN</a></button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 The Novel Library</p>
+  <p>bida25-287@thuto.bac.ac.bw</p>
+</footer>
+
+
+</body>
+</html>
