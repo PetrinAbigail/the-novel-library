@@ -312,9 +312,7 @@ h2 {
 /* hidden card when filtered */
 .book-card.hidden { display: none; }
 
-/* ============================================================
-   VALUES GRID
-   ============================================================ */
+/*  VALUES GRID*/
 .values-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -330,9 +328,7 @@ h2 {
 .value-card h3 { font-size: 1rem; margin-bottom: .5rem; }
 .value-card p  { font-size: .88rem; color: var(--muted); }
 
-/* ============================================================
-   ABOUT
-   ============================================================ */
+/*ABOUT*/
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -348,9 +344,7 @@ h2 {
 }
 .about-grid p { color: var(--muted); line-height: 1.8; margin-top: .75rem; }
 
-/* ============================================================
-   CONTACT FORM
-   ============================================================ */
+/* CONTACT FORM*/
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1.4fr;
@@ -407,9 +401,7 @@ h2 {
 }
 .form-group textarea { min-height: 120px; resize: vertical; }
 
-/* ============================================================
-   EVENTS
-   ============================================================ */
+/*  EVENTS */
 .event-card {
   display: grid;
   grid-template-columns: 80px 1fr;
@@ -454,9 +446,7 @@ h2 {
 .event-info h3 { font-size: 1rem; margin-bottom: .25rem; }
 .event-info p  { font-size: .85rem; color: var(--muted); }
 
-/* ============================================================
-   NEWSLETTER
-   ============================================================ */
+/* NEWSLETTER*/
 .newsletter {
   background: var(--brown);
   padding: 3.5rem 2rem;
@@ -492,9 +482,7 @@ h2 {
 }
 .nl-form button:hover { background: #e0ac50; }
 
-/* ============================================================
-   FOOTER
-   ============================================================ */
+/* FOOTER */
 footer {
   background: var(--dark);
   color: rgba(255,255,255,.6);
@@ -505,9 +493,7 @@ footer {
 }
 footer a { color: var(--gold); margin: 0 .5rem; }
 
-/* ============================================================
-   TOAST NOTIFICATION
-   ============================================================ */
+/*TOAST NOTIFICATION*/
 .toast {
   position: fixed;
   bottom: 1.5rem;
@@ -526,9 +512,7 @@ footer a { color: var(--gold); margin: 0 .5rem; }
 }
 .toast.show { transform: translateY(0); opacity: 1; }
 
-/* ============================================================
-   BACK-TO-TOP BUTTON
-   ============================================================ */
+/* BACK-TO-TOP BUTTON*/
 #back-to-top {
   position: fixed;
   bottom: 1.5rem;
@@ -552,9 +536,7 @@ footer a { color: var(--gold); margin: 0 .5rem; }
 #back-to-top.visible { opacity: 1; pointer-events: auto; }
 #back-to-top:hover { transform: translateY(-3px); }
 
-/* ============================================================
-   BOOK / READING PAGE STYLES
-   ============================================================ */
+/*  BOOK / READING PAGE STYLES */
 .reading-controls {
   position: sticky;
   top: var(--nav-h);
@@ -598,9 +580,7 @@ footer a { color: var(--gold); margin: 0 .5rem; }
 .book-content h3 { color: var(--muted); margin-bottom: 1.5rem; border-bottom: 1px solid rgba(0,0,0,.1); padding-bottom: .5rem; }
 .book-content p  { margin-bottom: 1.1rem; }
 
-/* ============================================================
-   PROGRESS BAR
-   ============================================================ */
+/*PROGRESS BAR */
 #reading-progress {
   position: fixed;
   top: var(--nav-h);
@@ -612,77 +592,3 @@ footer a { color: var(--gold); margin: 0 .5rem; }
   transition: width .1s linear;
 }
 
-/* ============================================================
-   RESPONSIVE — TABLET  (≤900px)
-   ============================================================ */
-@media (max-width: 900px) {
-  .about-grid  { grid-template-columns: 1fr; }
-  .contact-grid { grid-template-columns: 1fr; }
-  .book-grid   { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
-}
-
-/* ============================================================
-   RESPONSIVE — MOBILE  (≤650px)
-   ============================================================ */
-@media (max-width: 650px) {
-  /* Nav */
-  .nav-links  { display: none; }
-  .hamburger  { display: flex; }
-
-  /* Hero */
-  .hero { padding: 3.5rem 1.25rem; }
-  .hero p { font-size: .9rem; }
-  .btn-outline { margin-left: 0; margin-top: .5rem; }
-
-  /* Buttons stacked */
-  .hero .btn + .btn,
-  .hero .btn + .btn-outline { display: block; margin: .5rem auto 0; width: fit-content; }
-
-  /* Books */
-  .book-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
-  .book-card img { height: 185px; }
-
-  /* Events */
-  .event-card { grid-template-columns: 60px 1fr; gap: 1rem; padding: 1rem; }
-  .event-day  { font-size: 1.4rem; }
-
-  /* Newsletter */
-  .nl-form { flex-direction: column; border-radius: 4px; }
-  .nl-form input  { border-radius: 4px 4px 0 0; }
-  .nl-form button { border-radius: 0 0 4px 4px; }
-
-  /* Sections */
-  section { padding: 2.5rem 1.25rem; }
-  .about-grid img { height: 240px; }
-  .form-box { padding: 1.25rem; }
-
-  /* Reading */
-  .book-content { padding: 1.5rem 1rem; font-size: .97rem; }
-  .reading-controls { padding: .6rem 1rem; }
-}
-
-/* ============================================================
-   RESPONSIVE — SMALL MOBILE (≤380px)
-   ============================================================ */
-@media (max-width: 380px) {
-  .book-grid { grid-template-columns: 1fr 1fr; gap: .75rem; }
-  .book-card img { height: 160px; }
-  .logo { font-size: 1.1rem; }
-}
-
-/* ============================================================
-   CROSS-BROWSER FIXES
-   ============================================================ */
-/* Firefox */
-@-moz-document url-prefix() {
-  .form-group select { background-color: var(--cream); }
-}
-
-/* Prevent tap highlight on mobile */
-a, button { -webkit-tap-highlight-color: transparent; }
-
-/* Smooth font rendering */
-body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
